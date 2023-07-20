@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root{
+    --background-dark: #0f0d0d;
+    --background-light: #ffffc0;
+    --textContainer-background: linear-gradient(90deg, #0F0D0D 79.69%, rgba(15, 13, 13, 0.99) 83.08%, rgba(15, 13, 13, 0.98) 84.46%, rgba(15, 13, 13, 0.97) 86.33%, rgba(15, 13, 13, 0.94) 88.40%, rgba(15, 13, 13, 0.90) 90.47%, rgba(15, 13, 13, 0.81) 92.73%, rgba(15, 13, 13, 0.60) 94.80%, rgba(15, 13, 13, 0.30) 97.16%, rgba(15, 13, 13, 0.00) 100%);
+
+    --text-dark:var(--background-light);
+    --text-light:var(--background-dark);
+
+    --font-main:'JetBrains Mono', monospace;
+}
+
+*{
+    font-family: var(--font-main);
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background: var(--background-dark);
+    color: var(--text-dark);
+}
+
+nav
+{
+    display: flex;
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    width: 100vw;
+    background: var(--background-dark);
+    /* background: #f00; */
+    z-index: 10;
+}
+
+nav ul
+{
+    display: flex;
+}
+
+nav ul li
+{
+    margin: auto 5vh;
+    list-style: none;
+}
+
+nav ul li a
+{
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+nav ul li a:active
+{
+    color: var(--text-dark);
+}
+
+.page
+{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10vh;
+}
+
+.textContainer
+{
+    /* backdrop-filter: blur(10px); */
+}
+
+.page .textContainer .socialMedia ul
+{
+    display: flex;
+}
+
+.page .textContainer .socialMedia ul li
+{
+    list-style: none;
+    margin: auto 1vh;
+}
+
+.page .textContainer .socialMedia ul li a
+{
+    color: var(--background-light);
+    text-decoration: none;
+}
+
+.page.one img
+{
+    position: relative;
+    top: 0vh;
+    left: 35vw;
+    z-index: -10;
+    height: 100vh;
+}
+
+.page.one .textContainer
+{
+    position: relative;
+    left: 0;
+    top: -110vh;
+    width: 50vw;
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: var(--background-light); */
+    background: var(--textContainer-background);
+}
+
+.page.one .textContainer .nameEin
+{
+    font-size: 3em;
+    font-weight: 100;
+}
+
+.page.one .textContainer .nameZwei
+{
+    font-size: 5em;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+}
+
+.page.one .textContainer .jobTitle
+{
+    font-size: 1em;
+    font-weight: 200;
+    letter-spacing: 1em;
+}
+
+.page.two img
+{
+    position: relative;
+    top: -5vh;
+    left: 70vw;
+    /* height: ; */
+    border-radius: 321.5px;
+    z-index: -10;
+}
+
+.page.two .textContainer
+{
+    position: relative;
+    left: 0;
+    top: -100vh;
+    width: 50vw;
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    /* background: var(--background-light); */
+    background: var(--textContainer-background);
+    padding-right: 35vw;
+}
+
+.page.two .textContainer .pageTitle
+{
+    font-size: 5em;
+}
+
+.page.two .textContainer .about
+{
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+.page.two .textContainer .about p
+{
+    width: 40vw;
+}
+
+.page.three .textContainer
+{
+    position: relative;
+    left: 0;
+    /* top: -100vh; */
+    width: 50vw;
+    height:100vh ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    /* background: var(--background-light); */
+    background: var(--textContainer-background);
+    /* padding-right: 35vw; */
+}
+
+.page.three .textContainer .pageTitle
+{
+    font-size: 5em;
+}
+
+.page.three .textContainer .skills
+{
+    font-size: 2em;
+}
+
+.page.three .textContainer .skills ul li
+{
+    margin: 5vh auto 5vh auto;
+    list-style: none;
+}
