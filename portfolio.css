@@ -4,6 +4,11 @@
     --background-dark: #0f0d0d;
     --background-light: #ffffc0;
     --textContainer-background: linear-gradient(90deg, #0F0D0D 79.69%, rgba(15, 13, 13, 0.99) 83.08%, rgba(15, 13, 13, 0.98) 84.46%, rgba(15, 13, 13, 0.97) 86.33%, rgba(15, 13, 13, 0.94) 88.40%, rgba(15, 13, 13, 0.90) 90.47%, rgba(15, 13, 13, 0.81) 92.73%, rgba(15, 13, 13, 0.60) 94.80%, rgba(15, 13, 13, 0.30) 97.16%, rgba(15, 13, 13, 0.00) 100%);
+    --css-blue: #264de4;
+    --html-orange: #e34c26;
+    --git-orange: #f34f29;
+    --github-white: #fff;
+    --js-yellow: #f0db4f;
 
     --text-dark:var(--background-light);
     --text-light:var(--background-dark);
@@ -172,6 +177,11 @@ nav ul li a:active
     width: 40vw;
 }
 
+.page.three
+{
+    overflow: hidden;
+    width: 100vw;
+}
 .page.three .textContainer
 {
     position: relative;
@@ -187,6 +197,8 @@ nav ul li a:active
     /* background: var(--background-light); */
     background: var(--textContainer-background);
     /* padding-right: 35vw; */
+    z-index: 1;
+    top: -100vh;
 }
 
 .page.three .textContainer .pageTitle
@@ -203,4 +215,234 @@ nav ul li a:active
 {
     margin: 5vh auto 5vh auto;
     list-style: none;
+}
+
+.page.three .iconContainer
+{
+    position: relative;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+.page.three .iconContainer img
+{
+    height: 30px;
+}
+
+.icon
+{
+    height:fit-content;
+    width: fit-content;
+    border:solid 2px #ffffc0;
+}
+
+.css
+{
+    position: relative;
+    animation-name: cssAnime;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    /* animation-fill-mode: both; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes cssAnime {
+    0%
+    {
+        top: 0;
+        left: 0;
+    }
+
+    25%
+    {
+        top: 0;
+        left: 90%;
+    }
+
+    /* 50%
+    {
+        top: 50%;
+        left: 90%;
+    } */
+
+    75%
+    {
+        top: 80%;
+        left: 90%;
+    }
+
+    100%
+    {
+        top: 80%;
+        left: 0;
+    }
+}
+
+.git
+{
+    animation-name: gitAnime;
+    position: relative;
+    /* animation-name: cssAnime; */
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    /* animation-fill-mode: both; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes gitAnime {
+    0%
+    {
+        top: 50%;
+        left: 0;
+    }
+
+    50%
+    {
+        top: 50%;
+        left: 90%;
+    }
+
+    100%
+    {
+        top: 50%;
+        left: 0;
+    }
+}
+
+.github
+{
+    animation-name: githubAnime;
+    position: relative;
+    /* animation-name: cssAnime; */
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    /* animation-fill-mode: both; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes githubAnime {
+    0%
+    {
+        top: 70%;
+        left: 80%;
+    }
+
+    50%
+    {
+        top: 30%;
+        left: 50%;
+    }
+
+    75%
+    {
+        top: 25%;
+        left: 25%;
+    }
+
+    100%
+    {
+        top:70%;
+        left: 80%;
+    }
+}
+
+.html
+{
+    animation-name: htmlAnime;
+    /* animation-name: githubAnime; */
+    position: relative;
+    /* animation-name: cssAnime; */
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    /* animation-fill-mode: both; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes htmlAnime {
+    0%
+    {
+        top: 0;
+        left: 50%;
+    }
+
+    25%
+    {
+        top: 50%;
+        left: 90%;
+    }
+
+    50%
+    {
+        top: 90%;
+        left: 50%;
+    }
+
+    75%
+    {
+        top: 50%;
+        left: 0;
+    }
+
+    100%
+    {
+        top: 0;
+        left: 50%;
+    }
+}
+
+.js
+{
+    animation-name: jsAnime;
+    /* animation-name: githubAnime; */
+    position: relative;
+    /* animation-name: cssAnime; */
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction:alternate-reverse;
+    /* animation-fill-mode: both; */
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes jsAnime {
+    0%
+    {
+        top: 0;
+        left: 50%;
+    }
+
+
+
+    25%
+    {
+        top: 50%;
+        left: 70%;
+    }
+
+    50%
+    {
+        top: 70%;
+        left: 50%;
+    }
+
+    75%
+    {
+        top: 50%;
+        left: 20%;
+    }
+
+    100%
+    {
+        top: 0;
+        left: 50%;
+    }
 }
