@@ -19,12 +19,16 @@
 *{
     font-family: var(--font-main);
     scroll-behavior: smooth;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow-x: hidden;
 }
 
 body
 {
     background: var(--background-dark);
     color: var(--text-dark);
+    overflow-y: hidden;
 }
 
 nav
@@ -63,8 +67,8 @@ nav ul li a:active
 
 .page
 {
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     padding-top: 10vh;
 }
 
@@ -88,6 +92,11 @@ nav ul li a:active
 {
     color: var(--background-light);
     text-decoration: none;
+}
+
+.page.one
+{
+    overflow-y: hidden;
 }
 
 .page.one img
@@ -132,6 +141,11 @@ nav ul li a:active
     font-size: 1em;
     font-weight: 200;
     letter-spacing: 1em;
+}
+
+.page.two
+{
+    overflow-y: hidden;
 }
 
 .page.two img
@@ -466,8 +480,9 @@ nav ul li a:active
 .fa-gear
 {
     position: relative;
-    left: -13px;
-    top: 15px;
+    left: -10px;
+    top: 10px;
+    font-size: 0.5em;
 }
 
 @media screen and (max-width: 768px)
