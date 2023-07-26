@@ -485,7 +485,7 @@ nav ul li a:active
     font-size: 0.5em;
 }
 
-@media screen and (max-width: 768px)
+/* @media screen and (max-width: 768px)
 {
     *
     {
@@ -496,7 +496,7 @@ nav ul li a:active
     body
     {
         width: 100vw;
-        /* height: 100vh; */
+        height: 100vh;
         overflow-x: hidden;
     }
 
@@ -514,4 +514,4 @@ nav ul li a:active
         flex-direction: column;
         justify-content: space-evenly;
     }
-}
+} */
