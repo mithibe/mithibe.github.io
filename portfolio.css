@@ -198,7 +198,7 @@ nav ul li a:active
     background: var(--textContainer-background);
     /* padding-right: 35vw; */
     z-index: 1;
-    top: -100vh;
+    top: -110vh;
 }
 
 .page.three .textContainer .pageTitle
@@ -445,4 +445,22 @@ nav ul li a:active
         top: 0;
         left: 50%;
     }
+}
+
+.socialMedia
+{
+    position: relative;
+    top: 5vh;
+}
+
+.skillTitle
+{
+    margin-left: 5vh;
+}
+
+.fa-gear
+{
+    position: relative;
+    left: -13px;
+    top: 15px;
 }
