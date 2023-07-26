@@ -469,3 +469,25 @@ nav ul li a:active
     left: -13px;
     top: 15px;
 }
+
+@media screen and (max-width: 768px)
+{
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    body
+    {
+        width: 100vw;
+        /* height: 100vh; */
+        overflow-x: hidden;
+    }
+
+    nav
+    {
+        width: 100vw;
+        height: 10vh;
+    }
+}
