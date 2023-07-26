@@ -16,7 +16,7 @@
     --font-main:'JetBrains Mono', monospace;
 }
 
-*{
+:not(img){
     font-family: var(--font-main);
     scroll-behavior: smooth;
     max-width: 100vw;
