@@ -485,12 +485,13 @@ nav ul li a:active
     font-size: 0.5em;
 }
 
-/* @media screen and (max-width: 768px)
+@media screen and (max-width: 768px)
 {
     *
     {
         margin: 0;
         padding: 0;
+        font-size: 1rem;
     }
 
     body
@@ -503,15 +504,30 @@ nav ul li a:active
     nav
     {
         position: fixed;
-        width: 30px;
-        height: 2560px;
-        right: 30px;
+        width: 100%px;
+        height: 10vh;
+        top: 90vh;
     }
 
     nav ul
     {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-evenly;
     }
-} */
+
+    .page{
+        height: 90vh;
+        width: 100vw;
+    }
+
+    .textContainer{
+        font-size: 10px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 20vw;
+        width: 80vw;
+        overflow: hidden;
+        
+    }
+}
