@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 body{
@@ -34,6 +40,7 @@ nav ul{
     /* padding-bottom: 80px; */
 }
 
+
 .home{
     display: grid;
     grid: 
@@ -60,7 +67,46 @@ nav ul{
     grid-area: details;
     background: #000;
     color: #fff;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+}
+
+.details-frame button{
+    font-size: 16px;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #fac800, #fac800, #947600);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.about-me{
+    background: linear-gradient(#00000055, #000, #000, #000,#000);
+    color: #fff;
+    height: 100vh;
+    /* display: grid;
+    grid:
+    "title title title title title title title title title title title title" 1fr
+    ". . . . . . . . . . . . " 1fr
+    "bio bio bio bio bio bio bio bio bio bio bio bio bio" 1fr
+    "bio bio bio bio bio bio bio bio bio bio bio bio bio" 1fr
+    "bio bio bio bio bio bio bio bio bio bio bio bio bio" 1fr
+    / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.about-me-title{
+    grid-area: title;
+}
+
+.about-me-bio{
+    grid-area: bio;
 }
