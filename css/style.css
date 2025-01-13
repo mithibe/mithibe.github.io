@@ -12,13 +12,17 @@
 }
 
 body{
-    height: 100vh;
+    height: 100%;
+    max-width: 100vh;
     background: url('../assets/images/wallpaper/FinalPatternDark.svg');
+    overflow: hidden;
 }
 
 nav{
     position: fixed;
     bottom: 0;
+    left: 0;
+    z-index: 1000;
     background-color: #000;
     width: 100vw;
     height: 80px;
@@ -71,7 +75,7 @@ nav ul{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 80px;
+    /* margin-bottom: 80px; */
 }
 
 .details-frame button{
@@ -109,4 +113,36 @@ nav ul{
 
 .about-me-bio{
     grid-area: bio;
+}
+
+.portfolio{
+    background: linear-gradient(#00000055, #000, #000, #000,#000);
+    color: #fff;
+    height: 100vh;
+    /* margin-bottom: 80px; */
+    display: grid;
+    grid: 
+    "title title title title title title title title title title title title" 1fr
+    "prev project project project project project project project project project next" 1fr
+    "prev project project project project project project project project project next" 1fr
+    "prev project project project project project project project project project next" 1fr
+    "prev project project project project project project project project project next" 1fr
+    ;
+}
+
+.projects-track{
+    display: flex;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+}
+
+.projects{
+    min-width: 300px;
+    height: 200px;
+    text-align: center;
+    /* line-height: 200px; */
+    /* font-size: 1.5rem; */
 }

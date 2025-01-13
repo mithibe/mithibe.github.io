@@ -5,42 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MITHIBE IRUNGU</title>
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js" integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <!-- <img class="wallpaper" id="wallpaper" src="./assets/images/wallpaper/FinalPatternDark.svg" alt=""> -->
-    <main>
-        <div class="page home" id="Home">
-            <div class="mithibe-image">
-                <img src="./assets/images/People/mithibe.jpg" alt="mithibe">
-            </div>
-            <div class="details-frame">
-                <h1>Mithibe Irungu</h1>
-                <h3>UI/UX Designer</h3>
-
-                <button>Explore</button>
-            </div>
-        </div>
-        <div class="page about-me" id="AboutMe">
-            <h1 class="about-me-title">About Me</h1>
-            <p class="about-me-bio">
-                Hello!  My name is Mithibe, I am a passionate UI/UX Designer, Web Developer, Mobile App Developer and IT technician based in Kenya with an eye for detail and a strong foundation in technology, I strive to innovate experiences that are functional and visually captivating as well.
-
-                I majorly work with the following technologies:
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JAVASCRIPT</li>
-                        <li>C#</li>
-                        <li>MAUI</li>
-                        <li>VUE.JS</li>
-                        <li>PYTHON</li>
-                    </ul>
-            </p>
-        </div>
-        <div class="page" id="Portfolio"><h1>Portfolio</h1></div>
-        <div class="page" id="ContactMe"><h1>Contact me</h1></div>
-    </main>
     <nav>
         <ul>
             <a href="#Home">
@@ -57,5 +25,62 @@
             </a>
         </ul>
     </nav>
+    <!-- <img class="wallpaper" id="wallpaper" src="./assets/images/wallpaper/FinalPatternDark.svg" alt=""> -->
+    <main>
+        <div class="page home" id="Home">
+            <div class="mithibe-image">
+                <img src="./assets/images/People/mithibe.jpg" alt="mithibe">
+            </div>
+            <div class="details-frame">
+                <h1>Mithibe Irungu</h1>
+                <h3>UI/UX Designer</h3>
+
+                <button>Explore</button>
+            </div>
+        </div>
+        <div class="page about-me" id="AboutMe">
+            <h1 class="about-me-title">ABOUT ME</h1>
+            <p class="about-me-bio">
+                Hello!  My name is Mithibe, I am a passionate UI/UX Designer, Web Developer, Mobile App Developer and IT technician based in Kenya with an eye for detail and a strong foundation in technology, I strive to innovate experiences that are functional and visually captivating as well.
+
+                I majorly work with the following technologies:
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>C#</li>
+                        <li>MAUI</li>
+                        <li>VUE.JS</li>
+                        <li>PYTHON</li>
+                    </ul>
+            </p>
+        </div>
+        <div class="page portfolio" id="Portfolio">
+            <h1>PORTFOLIO</h1>
+            <button class="prev" onclick="slide(-1)">&#8249;</button>
+            <div class="projects-track">
+                <div class="projects designs">
+                    <h3>DESIGNS</h3>
+                    <p>
+                        Step into my world of creativity, where every design reflects ingenuity and progress. Explore my works, crafted with passion and purpose and a glimpse of the future.
+                    </p>
+                </div>
+                <div class="projects websites">
+                    <h3>WEBSITES</h3>
+                    <p>
+                        Welcome to my digital village, where African heritage meets innovation. Discover websites crafted with heart, tradition, and a vision for tomorrow.
+                    </p>
+                </div>
+                <div class="projects applications">
+                    <h3>MOBILE APPS</h3>
+                    <p>
+                        Enter my mobile realm, where African creativity meets innovation. Experience apps built with purpose, tradition, and a future-focused vision.
+                    </p>
+                </div>
+            </div>
+            <button class="next" onclick="slide(1)">&#8250;</button>
+        </div>
+        <div class="page" id="ContactMe"><h1>Contact me</h1></div>
+    </main>
 </body>
 </html>
