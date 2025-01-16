@@ -12,16 +12,16 @@
     <nav class="navbar">
         <ul>
             <a href="#Home">
-                 <li><box-icon name='home' type='solid' color='#fdf7f7' ></box-icon></li>
+                 <li><box-icon name='home' type='solid' color='#fdf7f7' size="35px"></box-icon></li>
             </a>
             <a href="#AboutMe">
-                <li><box-icon name='info-circle' type='solid' color='#fdf7f7' ></box-icon></li>
+                <li><box-icon name='info-circle' type='solid' color='#fdf7f7' size="35px"></box-icon></li>
             </a>
             <a href="#Portfolio">
-                <li><box-icon name='wrench' type='solid' color='#fdf7f7' ></box-icon></li>
+                <li><box-icon name='wrench' type='solid' color='#fdf7f7' size="35px"></box-icon></li>
             </a>
             <a href="#ContactMe">
-                <li><box-icon name='phone' type='solid' color='#fdf7f7' ></box-icon></li>
+                <li><box-icon name='phone' type='solid' color='#fdf7f7' size="35px"></box-icon></li>
             </a>
         </ul>
     </nav>
@@ -56,8 +56,80 @@
             </p>
         </div>
         <div class="page portfolio" id="Portfolio">
-            <h1>PORTFOLIO</h1>
-            <button class="prev" onclick="slide(-1)">&#8249;</button>
+            <div class="header">
+                <h1 class="portfolio-title">PORTFOLIO</h1>
+            </div>
+            <section class="carousel" aria-label="Gallery">
+                <ol class="carousel_viewport">
+                    <li id="carousel_slide1" tabindex="0" class="carousel_slide">
+                        <div class="carousel_snapper">
+                            <a href="#carousel_slide3" class="carousel_prev">&#8249;</a>
+                            <div class="text">
+                                <h3>DESIGNS</h3>
+                                <div class="image-container">
+                                    <div class="image-wrapper"><img src="./assets/images/projects/clothing-website.png" alt="project1"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/housing-website.png" alt="project2"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/predictor.png" alt="project3"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/savannah-scoops.png" alt="project4"></div>
+                                </div>
+                                <p>
+                                    Step into my world of creativity, where every design reflects ingenuity and progress. Explore my works, crafted with passion and purpose and a glimpse of the future.
+                                </p>
+                                <a href="">Explore</a>
+                            </div>
+                            <a href="#carousel_slide2" class="carousel_next"> &#8250;</a>
+                        </div>
+                    </li>
+                    <li id="carousel_slide2" tabindex="0" class="carousel_slide">
+                        <div class="carousel_snapper">
+                            <a href="#carousel_slide1" class="carousel_prev">&#8249;</a>
+                            <div class="text">
+                                <h3>WEBSITES</h3>
+                                <div class="image-container">
+                                    <div class="image-wrapper"><img src="./assets/images/projects/clothing-website.png" alt="project1"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/housing-website.png" alt="project2"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/predictor.png" alt="project3"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/savannah-scoops.png" alt="project4"></div>
+                                </div>
+                                <p>
+                                    Welcome to my digital village, where African heritage meets innovation. Discover websites crafted with heart, tradition, and a vision for tomorrow.
+                                </p>
+                                <a href="">Explore</a>
+                            </div>
+                            <a href="#carousel_slide3" class="carousel_next"> &#8250;</a>
+                        </div>
+                    </li>
+                    <li id="carousel_slide3" tabindex="0" class="carousel_slide">
+                        <div class="carousel_snapper">
+                            <a href="#carousel_slide2" class="carousel_prev">&#8249;</a>
+                            <div class="text">
+                                <h3>MOBILE APPS</h3>
+                                <div class="image-container">
+                                    <div class="image-wrapper"><img src="./assets/images/projects/clothing-website.png" alt="project1"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/housing-website.png" alt="project2"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/predictor.png" alt="project3"></div>
+                                    <div class="image-wrapper"><img src="./assets/images/projects/savannah-scoops.png" alt="project4"></div>
+                                </div>
+                                <p>
+                                    Enter my mobile realm, where African creativity meets innovation. Experience apps built with purpose, tradition, and a future-focused vision.
+                                </p>
+                                <a href="">Explore</a>
+                            </div>
+                            <a href="#carousel_slide1" class="carousel_next"> &#8250;</a>
+                        </div>
+                    </li>
+                </ol>
+                <!-- <aside class="carousel_naviation">
+                    <ol class="carousel_navigation-list">
+                        <li class="carousel_navigation-item"><a href="#carousel_slide1" class="carousel_navigation-button">Go to slide 1</a></li>
+                        <li class="carousel_navigation-item"><a href="#carousel_slide2" class="carousel_navigation-button">Go to slide 2</a></li>
+                        <li class="carousel_navigation-item"><a href="#carousel_slide3" class="carousel_navigation-button">Go to slide 3</a></li>
+                    </ol>
+                </aside> -->
+            </section>
+            <!-- <div class="prev-control leftSide">
+                <button class="prev" onclick="slide(-1)">&#8249;</button>
+            </div>
             <div class="projects-track">
                 <div class="projects designs">
                     <h3>DESIGNS</h3>
@@ -78,9 +150,45 @@
                     </p>
                 </div>
             </div>
+            <div class="next-control rightSide">
             <button class="next" onclick="slide(1)">&#8250;</button>
+            </div> -->
         </div>
-        <div class="page" id="ContactMe"><h1>Contact me</h1></div>
+        <div class="page ContactMe" id="ContactMe">
+            <h1 class="contactme-title">Contact me</h1>
+            <div class="main-contacts">
+                <ul>
+                    <a href="">
+                        <li><box-icon name="phone" type="solid" color="#fdf7f7" size="50px"></box-icon> </li>
+                    </a>
+                    <a href="">
+                        <li><box-icon name='whatsapp-square' type='logo' color='#fdf7f7' size="50px"></box-icon></li>
+                    </a>
+                    <a href="">
+                        <li><box-icon name='chat' type='solid' color='#fdf7f7' size="50px"></box-icon></li>
+                    </a>
+                    <a href="">
+                        <li><box-icon name='envelope' type='solid' color='#fdf7f7' size="50px"></box-icon></li>
+                    </a>
+                </ul>
+            </div>
+            <div class="other-contacts">
+                <ul>
+                    <a href="">
+                        <li><box-icon name='instagram-alt' type='logo' color='#fdf7f7' size="48px"></box-icon> Instagram</li>
+                    </a>
+                    <a href="">
+                        <li><box-icon name='facebook-square' type='logo' color='#fdf7f7' size="48px"></box-icon> Facebook</li>
+                    </a>
+                    <a href="">
+                        <li><box-icon name='twitter' type='logo' color='#fdf7f7' size="48px"></box-icon> Twitter</li>
+                    </a>
+                    <a href="">
+                        <li><box-icon name='linkedin-square' type='logo' color='#fdf7f7' size="48px"></box-icon> Linkedin</li>
+                    </a>
+                </ul>
+            </div>
+        </div>
     </main>
 </body>
 </html>
